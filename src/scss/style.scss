@@ -1,0 +1,48 @@
+@forward "globals";
+@forward "./components/all";
+
+@use "./util" as u;
+
+.container {
+  text-align: center;
+  background-image: url(gradient.png);
+  margin-inline: auto;
+  margin-top: 10vh;
+  max-width: u.rem(600);
+  height: u.rem(470);
+  border-radius: u.rem(5);
+  padding: u.rem(35);
+}
+
+.drum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: u.rem(5);
+    border: u.rem(2) solid var(--text-color);
+    border-radius: u.rem(5);
+    padding: u.rem(20);
+  }
+  &__controls {
+    padding-top: u.rem(35);
+  }
+}
+
+.drum-pad {
+  color: var(--text-color);
+  background-image: url(gradient.png);
+  padding: u.rem(30);
+  border: lightblue;
+  border-radius: u.rem(5);
+  box-shadow: u.rem(5) u.rem(5) lightblue;
+  transition: all ease-in-out 0.1s;
+}
+
+.drum-pad:active {
+  transform: translate(u.rem(3), u.rem(3));
+}
