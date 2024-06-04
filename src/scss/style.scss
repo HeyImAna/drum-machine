@@ -5,7 +5,7 @@
 
 .container {
   text-align: center;
-  background-image: url(gradient.png);
+  background-image: url(/public/gradient.png);
   margin-inline: auto;
   margin-top: 10vh;
   max-width: u.rem(600);
@@ -35,7 +35,7 @@
 
 .drum-pad {
   color: var(--text-color);
-  background-image: url(gradient.png);
+  background-image: url(/public/gradient.png);
   padding: u.rem(30);
   border: lightblue;
   border-radius: u.rem(5);
