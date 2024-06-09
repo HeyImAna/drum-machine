@@ -1,11 +1,9 @@
 @forward "globals";
-@forward "./components/all";
-
 @use "./util" as u;
 
 .container {
   text-align: center;
-  background-image: url(/public/gradient.png);
+  background-image: url(/public/gradient.jpg);
   margin-inline: auto;
   margin-top: 10vh;
   max-width: u.rem(600);
@@ -35,7 +33,7 @@
 
 .drum-pad {
   color: var(--text-color);
-  background-image: url(/public/gradient.png);
+  background-image: url(/public/gradient.jpg);
   padding: u.rem(30);
   border: lightblue;
   border-radius: u.rem(5);
